@@ -1,0 +1,256 @@
+/* span {
+  background-color: orange;
+} */
+
+/* * means all elements  */
+body {
+  background-color: rgb(173, 173, 173);
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#department, #products {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+p, #homepadepic, h2 {
+  margin: 20px 10px;
+}
+
+#visitedcountires {
+  vertical-align: top;
+}
+
+#visited_countries {
+  margin-top: 5px;
+}
+/* a tag */
+.main_link {
+  background-color: white;
+  color: #120400;
+  text-decoration: none;
+  margin: 10px;
+}
+
+#current_page {
+  background-color: #537ef5;
+}
+
+/* Pseudo Selectors */
+a:hover, #current_page:hover {
+  background-color: #f0c243;
+}
+
+#firstname:active {
+  background-color: blue;
+}
+
+/* div span {
+  background-color: magenta;
+} */
+
+/* rgb color */
+h1 {
+  /* color: rgb(75, 75, 75); */
+  color: white;
+  font-size: 40px;
+  /* font-weight: normal; */
+  /* font-style: italic; */
+  text-transform: uppercase;
+  /* text-decoration: underline; */
+  text-align: center;
+  /* h-shadow, v-shadow,  */
+  text-shadow: 2px 2px 1px #120400;
+  /* text-indent: 100px; */
+  /* letter-spacing: 3px; */
+  /* word-spacing: 75px; */
+}
+
+h2 {
+  color: white;
+  text-shadow: 1px 1px 1px #120400;
+}
+
+/* all the li(s) of the ol  */
+ol > li {
+  list-style-type: lower-roman;
+}
+
+ul > li {
+  /* list-style-type: square;
+  list-style-position: outside; */
+  /* list-style: url("../images/car.png") circle inside; */
+  list-style-type: square;
+}
+
+.about_photo {
+  height: 250px;
+  width: 250px;
+  /* background-color: mediumspringgreen; */
+  /* top, right, bottom, left *same as padding*/
+  margin: 35px 45px 55px 65px;
+  margin-bottom: 30px;
+  display: inline-block;
+  /* background-size: contain; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 5px solid red; */
+  /* border-radius: 50px; */
+  /* padding: 45px; */
+  /* hide the rest of the content . scroll, hide  IT'S NOT COMMON?? */
+  /* overflow: hidden; */
+  /* border-style: dotted dashed solid double;  *you can specify each border */
+
+  /* add borde and padding are calculated */
+  box-sizing: content-box;
+  /* H, V-offset, spread */
+  /* box-shadow: 5px 10px 0px yellow; */
+
+  /* each of the box usese 0 0   STATIC a pic adheres to the right position */
+  position: relative;
+}
+
+#pic1 {
+  /* background-image: url("../images/blue_dot.png"); */
+
+  /* repat-x, y axis , no repeat, round , space*/
+  /* background-repeat: no-repeat;  */
+
+  /* 50px for x , 150px for y */
+  /* background-position: 50px 150px; */
+
+  /* fixed , scroll(default) */
+  background-attachment: scroll;
+
+  /* auto, cover, contain, hpx and vpx */
+  /* background-size: 150px 150px; */
+
+  /* Shorthand
+  
+  photo, color, repetition and position. THIS IS NOT A CONTENT. THIS IS ONLY A BACKGROUND. 
+  It cannot be copied. */
+  background: url("../images/bmw_car.jpg") no-repeat 0px 0px;
+  /* background-size: contain; */
+  /* left: 200px; */
+  /* top: 100px; */
+  /* z-index: 2; */
+  border: dashed 7px red;
+}
+
+#pic2 {
+  background-image: url("../images/toyota_car.jpeg");
+  border: dotted 7px red;
+}
+
+#pic3 {
+  background-image: url("../images/honda_car.jpg");
+  border: groove 7px red;
+}
+
+#pic4 {
+  background-image: url("../images/nissan_car.jpeg");
+  border: solid 7px red;
+}
+
+#container {
+  width: 85%;
+
+  /* content should be in the middle */
+  margin: auto;
+
+  min-height: 100%;
+  /* background-color: #d6d6d6; */
+  background-color: rgb(173, 173, 173);
+}
+
+/* show and hide */
+table {
+  empty-cells: show;
+  /* border-spacing: 5px 10px; */
+
+  /* collapse or separate */
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
+  /*  */
+  max-width: 950px;
+  margin: 10px;
+}
+
+/* all the images in the td */
+td > img {
+  width: 100%;
+  /* min-width is the minimum of the img */
+  max-width: 250px;
+}
+
+/* table border */
+th, td, table {
+  border: 2px solid #120400;
+}
+
+tr th {
+  background-color:thistle;
+  color: white;
+  text-shadow: 1px 1px 1px #120400;
+  letter-spacing: 2px;
+}
+
+/* #ptest {
+  background-color: magenta;
+  clear: left;
+}
+
+#itest {
+  background-color: yellow;
+  width: 300px;
+  height: 250px;
+  float: left;
+} */
+
+form {
+  margin: 10px ;
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  margin: 5px;
+}
+
+textarea {
+  margin: 5px;
+  vertical-align: top;
+  border: 3px solid red;
+  min-width: 250px;
+  min-height: 100px;
+  max-width: 350px;
+  max-height: 250px;
+}
+
+button {
+  margin: 5px;
+  background-color: #98b3fc;
+}
+
+button:hover {
+  background-color: #f0c243;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(173, 173, 173);
+  /* color: white; */
+  font-size: 15px;
+  padding:10px 0px;
+  margin: 30px;
+}
+
+/* header {
+  background-color: pink;
+} */

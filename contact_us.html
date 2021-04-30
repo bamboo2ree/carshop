@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+
+      <h1>Carshop Company</h1>
+      <h2>Contact Us</h2>
+      <hr>
+      <nav>
+        <!-- link -->
+        <a class="main_link" href="index.html">Home</a>
+        <a class="main_link" href="product.html">Products</a>
+        <a class="main_link" href="about_us.html">About Us</a>
+        <a class="main_link" id="current_page" href="contact_us.html">Contact Us</a>
+        <br>
+      </nav>
+
+    </header>
+
+    <!-- form -->
+    <!-- labe for and input id are the same  -->
+    <form>
+
+      <label for="firstname">Firstname:</label>
+      <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+      <label for="lastname">Lastname:</label>
+      <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" placeholder="Enter your password">
+      <br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" name="birthday" id="birthday">
+      <br>
+      <label for="email_address">Email Address:</label>
+      <input type="email" name="email_address" id="email_address" placeholder="xxxx@gmail.com">
+      <br>
+      <label for="message">Message:</label>
+      <textarea name="message" id="message">This is the default message. </textarea>
+      <br>
+
+      <!-- radio  / value will be sent... -->
+      <label>Product of interest:</label>
+      <input type="radio" id="car_units" name="product_of_interest" value="car_units">
+      <label for="car_units">Car Units</label>
+      <input type="radio" id="car_services" name="product_of_interest" value="car_services">
+      <label for="car_services">Car Services</label>
+      <br>
+
+      <!-- checkbox  / true *No value attribute -->
+      <label>How did you learn about our company?</label>
+      <input type="checkbox" name="television" id="television">
+      <label for="television">Television</label>
+      <input type="checkbox" name="facebook" id="facebook">
+      <label for="facebook">Facebook</label>
+      <input type="checkbox" name="radio" id="radio">
+      <label for="radio">Radio</label>
+      <br>
+
+      <!-- dropbox -->
+      <label for="country_of_citizenship">Country of Citizenship:</label>
+      <select name="country_of_citizenship" id="country_of_citizenship">
+        <option value="angola">Angola</option>
+        <option value="botswana">Botswana</option>
+        <option value="canada">Canada</option>
+        <option value="djibouti">Dijibouti</option>
+        <option value="eitrea">Eritrea</option>
+        <option calue="fiji">Fiji</option>
+        <option value="indonesia">Indonesia</option>
+      </select>
+      <br>
+
+      <!-- multiple allows users to choose more than two options -->
+      <label id="visitedcountires" for="visited_countries">Visited Countries:</label>
+      <select name="visited_countries" id="visited_countries" multiple>
+        <option value="armenia">Armenia</option>
+        <option value="belguim">Belguim</option>
+        <option value="china">China</option>
+        <option value="Denmark">Denmark</option>
+        <option value="egypt">Egypt</option>
+        <option calue="france">France</option>
+        <option value="ireland">Ireland</option>
+      </select>
+      <br>
+
+      <!-- required *Users can't submit until they fill out the required fields -->
+      <label for="age">Age:</label>
+      <input type="number" name="age" id="age" min="0" max="140" required>
+      <br>
+
+      <!-- File -->
+      <label for="finput">File input:</label>
+      <input type="file" name="finput" id="finput">
+      <br>
+
+      <!-- Three different ways to make a button. -->
+      <button type="submit" value="submit">Submit</button>
+      <br>
+
+      <input type="button" value="Click Me">
+      <br>
+
+      <!-- button image -->
+      <input type="image" alt="blue dot button" src="images/blue_dot.png">
+      <br>
+
+    </form>
+
+  </div>
+
+  <footer>
+    Copyright 2021
+  </footer>
+
+</body>
+
+</html>
